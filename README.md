@@ -24,8 +24,7 @@ Explanation by models GPT-4o and CodeLlama 34B.
 ```json
 % GPT-4o explanation
 {
-    "why": "The vulnerability occurs bec![Uploading metric-BLEU.svg…]()
-ause the loop continues reading and appending characters without proper limit checks or conditions, potentially leading to excessive resource consumption.",
+    "why": "The vulnerability occurs because the loop continues reading and appending characters without proper limit checks or conditions, potentially leading to excessive resource consumption.",
     "danger": "Exploiting this vulnerability could lead to denial of service by consuming excessive memory or CPU resources, rendering the application unresponsive or unavailable to legitimate users.",
     "how": "An attacker could exploit this by sending input that keeps the loop running indefinitely, consuming all available resources until the system becomes unresponsive.",
     "fix": "To fix this vulnerability, implement proper bounds checking or limiting mechanisms to ensure that resources are not consumed excessively when appending characters to the buffer."
