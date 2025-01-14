@@ -4,7 +4,7 @@ The filtered ReposVul dataset is available in the reposvul_filtered.json file, w
 
 An example of a vulnerability explanation is shown below.
 
-Vulnerability: CWE-400 Uncontrolled Resource Consumption (CVE-2022-24839)
+Vulnerability: CWE-400 Uncontrolled Resource Consumption ([CVE-2022-24839](https://nvd.nist.gov/vuln/detail/CVE-2022-24839)).
 
 ```java
 protected void scanPI() throws IOException {
