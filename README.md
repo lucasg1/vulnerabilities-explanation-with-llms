@@ -24,7 +24,8 @@ Explanation by models GPT-4o and CodeLlama 34B.
 ```json
 % GPT-4o explanation
 {
-    "why": "The vulnerability occurs because the loop continues reading and appending characters without proper limit checks or conditions, potentially leading to excessive resource consumption.",
+    "why": "The vulnerability occurs bec![Uploading metric-BLEU.svg…]()
+ause the loop continues reading and appending characters without proper limit checks or conditions, potentially leading to excessive resource consumption.",
     "danger": "Exploiting this vulnerability could lead to denial of service by consuming excessive memory or CPU resources, rendering the application unresponsive or unavailable to legitimate users.",
     "how": "An attacker could exploit this by sending input that keeps the loop running indefinitely, consuming all available resources until the system becomes unresponsive.",
     "fix": "To fix this vulnerability, implement proper bounds checking or limiting mechanisms to ensure that resources are not consumed excessively when appending characters to the buffer."
@@ -37,5 +38,15 @@ Explanation by models GPT-4o and CodeLlama 34B.
     "fix": "To fix this vulnerability, the code should be modified to properly control the allocation and maintenance of resources, such as by limiting the number of requests that can be made in a given time period, or by implementing a rate limiting mechanism to prevent excessive resource consumption."
 }
 ```
+
+Some results comparing GPT-4o with the evaluated models are presented here, other results and graphs can be seen on the [results](results/) folder.
+
+![metric-BLEU](https://github.com/user-attachments/assets/9d6f9597-c19c-46b5-bbd4-64818aa1a3f4)
+![metric-ROUGE-L](https://github.com/user-attachments/assets/600a59f2-ece3-4b54-90df-440cd8875799)
+![metric-BERT-F1](https://github.com/user-attachments/assets/2ca0a84d-8e1c-434a-bb35-5f5bd8ec6fa2)
+![metric-ROUGE-1](https://github.com/user-attachments/assets/cb222a53-e693-4210-b1be-a733f55803e9)
+![metric-ROUGE-2](https://github.com/user-attachments/assets/fb9552e7-3550-4a5b-960c-897cf4021fd9)
+
+
 
 
